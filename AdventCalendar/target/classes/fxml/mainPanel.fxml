@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="486.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adventCalendar.controller.MainController">
+   <children>
+      <DatePicker fx:id="dateFrom" layoutX="86.0" layoutY="83.0" promptText="Od" />
+      <DatePicker fx:id="dateTo" layoutX="344.0" layoutY="83.0" promptText="Do" />
+      <TextArea fx:id="textArea" layoutX="126.0" layoutY="154.0" prefHeight="246.0" prefWidth="348.0" promptText="Podaj imiona" />
+      <Button fx:id="generateButton" layoutX="274.0" layoutY="413.0" mnemonicParsing="false" text="Generuj" />
+      <Label layoutX="276.0" layoutY="46.0" text="Zakres dat" />
+      <Label layoutX="226.0" layoutY="130.0" text="Imiona osób biorących udział" />
+      <Label fx:id="labelPath" layoutX="173.0" layoutY="449.0" text="Link do folderu z plikami:" visible="false" />
+      <Hyperlink fx:id="linkPath" layoutX="315.0" layoutY="446.0" text="Hyperlink" visible="false" />
+   </children>
+</AnchorPane>
